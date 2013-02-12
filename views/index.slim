@@ -1,0 +1,12 @@
+doctype html
+html
+  head
+    meta charset="utf-8"
+  body
+    ul
+      - @repos.each do |repo|
+        li
+          = repo.name
+          = repo.defects.inspect
+          = repo.cured_defects.inspect
+          
